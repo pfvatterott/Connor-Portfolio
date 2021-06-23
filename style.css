@@ -8,9 +8,14 @@ main {
 flex: 1 0 auto;
 }
 
-/* NavBar */
+/* Navbar Color*/
 .nav-wrapper {
-    background-color: #66A0DE;
+    background-color: #7fbbc7;
+}
+
+/* Navbar Text Size */
+.navbarTitle {
+    font-size: x-large;
 }
 
 /* Adjusts Height of Content */
@@ -23,7 +28,24 @@ flex: 1 0 auto;
     height: 300px;
 }
 
-/* Footer */
+/* Icon Formatting */
+.contact-icons {
+    background-color: #83B7DE;
+    margin-right: 5px;
+    height: 50px;
+    width: 50px;
+}
+
+.contact-icons:hover {
+    background-color: #2E3639;
+}
+
+.iconImage {
+    position: relative;
+    top: 4px;
+}
+
+/* Footer Color*/
 .page-footer {
-    background-color: #66A0DE;
+    background-color: #7fbbc7;
 }

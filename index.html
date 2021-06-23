@@ -29,32 +29,12 @@
 <body>
 
   <!-- Navbar -->
-
   <header>
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper">
           <div class="container">
-            <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-              <li class="tab"><a href="#home">Home</a></li>
-              <li><a href="#research">Research</a></li>
-              <li><a href="#Portfolio">CV</a></li>
-            </ul>
-            <ul class="side-nav" id="mobile-menu">
-              <li>
-                <div class="userView">
-                  <a href="#!user"><img class="circle"
-                      src="./assets/connor-profile.jpg"
-                      alt="User Image Sidenav"></a>
-                  <a href="#!name"><span class="black-text name">Connor Jackson</span></a>
-                  <a href="#!email"><span class="black-text email">connorpj@gmail.com</span></a>
-                </div>
-              </li>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./research.html">Research</a></li>
-              <li><a href="#PortfolioMobile">CV</a></li>
-            </ul>
+            <a class="right navbarTitle">Connor Jackson</a>
           </div>
         </div>
       </nav>
@@ -62,10 +42,7 @@
   </header>
 
   <!-- Main -->
-
-  
   <main>
-
     <section class="section white main-section">
         <div class="row container">
             <div class="col s12 m4">
@@ -77,14 +54,31 @@
                 <h4>Connor Jackson</h4>
                 <p>Resource Economics Graduate Student</p>
                 <p>University of California - Berkley</p>
-                <a href="https://www.linkedin.com/in/connorpj/" target="_blank">LinkedIn</a>
+                <!-- <a href="https://www.linkedin.com/in/connorpj/" target="_blank">LinkedIn</a>
                 <a> - </a>
                 <a href="https://orcid.org/0000-0002-4220-5210" target="_blank">ORCiD</a>
                 <a> - </a>
                 <a href="https://github.com/connorp" target="_blank">GitHub</a>
                 <a> - </a>
-                <a href="https://github.com/connorp" target="_blank">CV</a>
+                <a href="https://github.com/connorp" target="_blank">CV</a> -->
 
+                <a href="https://github.com/connorp" target="_blank" 
+                  class="hoverable btn-floating btn contact-icons z-depth-2" data-aos="flip-left">
+                  <i class="fab fa-github tooltipped iconImage" data-tooltip="Github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/connorpj/" target="_blank"
+                  class="hoverable btn-floating btn contact-icons z-depth-2" data-aos="flip-left">
+                  <i class="fab fa-linkedin-in tooltipped iconImage" data-tooltip="LinkedIn"></i>
+                </a>
+                <a href="https://orcid.org/0000-0002-4220-5210" target="_blank"
+                  class="hoverable btn-floating btn contact-icons z-depth-2" data-aos="flip-left">
+                  <i class="fab fa-orcid tooltipped iconImage" data-tooltip="ORCiD"></i>
+                </a>
+                <a href="https://orcid.org/0000-0002-4220-5210" target="_blank"
+                  class="hoverable btn-floating btn contact-icons z-depth-2" data-aos="flip-left">
+                  <i class="fas fa-file-download tooltipped iconImage" data-tooltip="CV"></i>
+                </a>
+                <br><br>
             </div>
             <div class="col s12 m1"></div>
             <div class="col s12 m7">
@@ -142,20 +136,12 @@
                 <div class="divider"></div>
                 <br>
               </div>
-
-
             </div>
         </div>
     </section>
-
-  
-   
   </main>
 
-
-
   <!-- Footer -->
-
   <footer class="page-footer">
     <div>
       <div class="container">
@@ -174,15 +160,6 @@
     $("document").ready(function () {
       // materialize initializers
       $('.tabs').tabs();
-      $(".button-collapse").sideNav({
-        closeOnClick: true
-      });
-      $('.parallax').parallax();
-      $('.scrollspy').scrollSpy();
-      $('.materialboxed').materialbox();
-      AOS.init();
-
-      
     });   
   </script>
 
