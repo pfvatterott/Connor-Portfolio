@@ -10,7 +10,7 @@ flex: 1 0 auto;
 
 /* Navbar Color*/
 .nav-wrapper {
-    background-color: #7fbbc7;
+    background-color: #5688A6;
 }
 
 /* Navbar Text Size */
@@ -30,8 +30,9 @@ flex: 1 0 auto;
 
 /* Icon Formatting */
 .contact-icons {
-    background-color: #83B7DE;
+    background-color: #72C3F2;
     margin-right: 5px;
+    margin-bottom: 5px;
     height: 50px;
     width: 50px;
 }
@@ -45,7 +46,9 @@ flex: 1 0 auto;
     top: 4px;
 }
 
+
+
 /* Footer Color*/
 .page-footer {
-    background-color: #7fbbc7;
+    background-color: #5688A6;
 }
