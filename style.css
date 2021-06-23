@@ -8,25 +8,22 @@ main {
 flex: 1 0 auto;
 }
 
+/* NavBar */
 .nav-wrapper {
     background-color: #66A0DE;
 }
 
+/* Adjusts Height of Content */
 .main-section {
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
+/* Size of Profile Pic */
 .main-profile-pic {
     height: 300px;
 }
 
-.contact-buttons {
-    margin-left: 5px;
-    margin-bottom: 5px;
-    background-color: #346191;
-}
-
-
+/* Footer */
 .page-footer {
     background-color: #66A0DE;
 }
