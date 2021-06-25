@@ -10,7 +10,7 @@ flex: 1 0 auto;
 
 /* Navbar Color*/
 .nav-wrapper {
-    background-color: #5688A6;
+    background-color: #003262;
 }
 
 /* Navbar Text Size */
@@ -26,15 +26,17 @@ flex: 1 0 auto;
 /* Size of Profile Pic */
 .main-profile-pic {
     height: 300px;
+    /* border-radius: 25px; */
 }
 
 /* Icon Formatting */
 .contact-icons {
-    background-color: #72C3F2;
+    background-color: #25517A;
     margin-right: 5px;
     margin-bottom: 5px;
     height: 50px;
     width: 50px;
+    /* border-radius: 20px; */
 }
 
 .contact-icons:hover {
@@ -43,12 +45,40 @@ flex: 1 0 auto;
 
 .iconImage {
     position: relative;
-    top: 4px;
+    top: 6px;
+    right: 9px;
 }
 
+.iconImageCV {
+    position: relative;
+    top: 6px;
+    right: 12px;
+    font-style: normal;
+}
+
+/* Section Headers */
+
+.sectionTabs {
+    color: #003262 !important;
+    font-weight: bold;
+}
+
+.indicator {
+    background-color: #25517A !important;
+}
+
+/* Research Links */
+
+.research-link {
+    color: #25517A;
+}
+
+.research-link:hover {
+    color: #2E3639;
+}
 
 
 /* Footer Color*/
 .page-footer {
-    background-color: #5688A6;
+    background-color: #003262;
 }
