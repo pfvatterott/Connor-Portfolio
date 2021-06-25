@@ -58,6 +58,10 @@ flex: 1 0 auto;
 
 /* Section Headers */
 
+.tabs {
+    margin-bottom: 50px;
+}
+
 .sectionTabs {
     color: #003262 !important;
     font-weight: bold;
@@ -77,8 +81,19 @@ flex: 1 0 auto;
     color: #2E3639;
 }
 
+/* Dividers for research and teaching */
 
-/* Footer Color*/
+.divider {
+    margin-top: 50px;
+    margin-bottom: 50px
+}
+
+
+/* Footer */
 .page-footer {
     background-color: #003262;
+}
+
+.copyright {
+    padding-bottom: 20px;
 }
