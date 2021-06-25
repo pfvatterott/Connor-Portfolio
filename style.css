@@ -8,6 +8,18 @@ main {
 flex: 1 0 auto;
 }
 
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 25px
+}
+
+h3 {
+    font-size: 25px;
+}
+
 /* Navbar Color*/
 .nav-wrapper {
     background-color: #003262;
@@ -18,7 +30,7 @@ flex: 1 0 auto;
     font-size: x-large;
 }
 
-/* Adjusts Height of Content */
+/* Adjusts Height of All Content */
 .main-section {
     margin-top: 5%;
 }
