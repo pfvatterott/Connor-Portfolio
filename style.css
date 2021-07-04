@@ -9,7 +9,7 @@ flex: 1 0 auto;
 }
 
 h1 {
-    font-size: 35px;
+    font-size: 28px;
 }
 
 h2 {
@@ -27,7 +27,21 @@ h3 {
 
 /* Navbar Text Size */
 .navbarTitle {
-    font-size: x-large;
+    font-size: x-large; 
+}
+
+.navbar-fixed { /* removes overlay so user can press links */
+    z-index: 999; 
+}
+
+.nav-links {
+   padding-top: 8px !important;
+   margin-bottom: 100px !important;
+}
+
+.indicator {
+    display: none;
+    /* background-color: #25517A !important; */
 }
 
 /* Adjusts Height of All Content */
@@ -35,19 +49,25 @@ h3 {
     margin-top: 5%;
 }
 
+.contact-padding {
+    margin-bottom: -8px !important;
+    white-space: nowrap;
+}
+
 /* Size of Profile Pic */
 .main-profile-pic {
-    height: 300px;
+    max-height: 364px;
     /* border-radius: 25px; */
 }
+
 
 /* Icon Formatting */
 .contact-icons {
     background-color: #25517A;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    height: 50px;
+    margin-right: 3px;
+    margin-top: 10px;
     width: 50px;
+    height: 50px;
     /* border-radius: 20px; */
 }
 
@@ -66,21 +86,6 @@ h3 {
     top: 6px;
     right: 12px;
     font-style: normal;
-}
-
-/* Section Headers */
-
-.tabs {
-    margin-bottom: 50px;
-}
-
-.sectionTabs {
-    color: #003262 !important;
-    font-weight: bold;
-}
-
-.indicator {
-    background-color: #25517A !important;
 }
 
 /* Research Links */

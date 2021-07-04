@@ -29,31 +29,45 @@
 <body>
 
   <!-- Navbar -->
-  <!-- <header>
+  <header>
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper">
           <div class="container">
-            <a class="right navbarTitle">Connor Jackson</a>
+            <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons hide-on-med-and-up">menu</i></a>
+            <div class="nav-content right hide-on-small-only">
+              <span class="tabs tabs-transparent">
+                <li class="tab nav-links"><a class="active" href="#home">Home</a></li>
+                <li class="tab nav-links"><a href="#research">Research</a></li>
+                <li class="tab nav-links"><a href="#teaching">Teaching</a></li>
+              </span>
+            </div>
+            <ul class="side-nav" id="mobile-menu">
+              <li id="home-button"><a>Home</a></li>
+              <li id="research-button"><a>Research</a></li>
+              <li id="teaching-button"><a>Teaching</a></li>
+            </ul>
           </div>
         </div>
       </nav>
     </div>
-  </header> -->
+  </header>
 
   <!-- Main -->
   <main>
     <section class="section white main-section">
         <div class="row container">
-            <div class="col s12 m4 center-align">
+            <div class="col s12 l6 center-align">
                 <!-- Profile Picture and Links -->
-                <img class="main-profile-pic"
+                <img class="main-profile-pic responsive-img"
                 src="./assets/connor-profile.jpg" alt="Connor Jackson profile picture">
                 <h1>Connor P. Jackson</h1>
-                <p>Resource Economics Graduate Student</p>
-                <p>University of California - Berkeley</p>
-                <p>2751 Pamela Drive, Cottonwood Heights, UT 84092</p>
-             
+                <p class="contact-padding">Doctoral Student</p>
+                <p class="contact-padding">Agricultural and Resource Economics</p>
+                <p class="contact-padding">University of California, Berkeley</p>
+                <br>
+                <p class="contact-padding">207 Giannini Hall</p>
+                <p>Berkeley, CA 94720-3310</p>
                 <a href="https://github.com/connorp" target="_blank" aria-label="Link to Github"
                   class="hoverable btn contact-icons" data-aos="flip-left">
                   <i class="fab fa-github tooltipped iconImage" data-tooltip="Github"></i>
@@ -62,7 +76,7 @@
                   class="hoverable btn contact-icons" data-aos="flip-left">
                   <i class="fab fa-linkedin-in tooltipped iconImage" data-tooltip="LinkedIn"></i>
                 </a>
-                <a href="mailto:connorpj@gmail.com" target="_blank" aria-label="Link to email connorpj@gmail.com"
+                <a href="mailto:cpjackson@berkeley.edu" target="_blank" aria-label="Link to email cpjackson@berkeley.edu"
                   class="hoverable btn contact-icons" data-aos="flip-left">
                   <i class="fas fa-envelope tooltipped iconImage" data-tooltip="Email"></i>
                 </a>
@@ -74,18 +88,13 @@
                   class="hoverable btn contact-icons" data-aos="flip-left">
                   <i class="tooltipped iconImageCV" data-tooltip="Vita">CV</i>
                 </a>
+
+                <div class="divider hide-on-large-only"></div>
+
             </div>
 
-            <div class="col s12 m1"></div>
-
-            <div class="col s12 m7">
-              <ul class="tabs">
-                <li class="tab col s4"><a class="active sectionTabs" href="#home">Home</a></li>
-                <li class="tab col s4"><a class="sectionTabs" href="#research">Research</a></li>
-                <li class="tab col s4"><a class="sectionTabs" href="#teaching">Teaching</a></li>
-              </ul>
+            <div class="col s12 l6">
               
-
               <!-- Home Section -->
               <section id="home">
                 <p class="grey-text text-darken-3 lighten-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, provident. Pariatur eveniet quam velit praesentium laborum odio deleniti officia fuga, debitis, amet nemo ex, perferendis voluptate minima veniam reprehenderit explicabo! <br /> <br />
@@ -149,6 +158,18 @@
     $("document").ready(function () {
       // materialize initializers
       $('.tabs').tabs();
+      $(".button-collapse").sideNav({
+        closeOnClick: true
+      });
+      $("#home-button").click(function() {
+        $(".tabs").tabs('select_tab', 'home')
+      })
+      $("#research-button").click(function() {
+        $(".tabs").tabs('select_tab', 'research')
+      })
+      $("#teaching-button").click(function() {
+        $(".tabs").tabs('select_tab', 'teaching')
+      })
     });   
   </script>
 
