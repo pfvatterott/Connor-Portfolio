@@ -23,6 +23,7 @@ h3 {
 /* Navbar Color*/
 .nav-wrapper {
     background-color: #003262;
+    height: 64px !important;
 }
 
 /* Navbar Text Size */
