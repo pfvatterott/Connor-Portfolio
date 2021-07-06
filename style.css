@@ -17,7 +17,7 @@ h2 {
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 22px;
 }
 
 /* Navbar Color*/
@@ -52,7 +52,6 @@ h3 {
 
 .contact-padding {
     margin-bottom: -8px !important;
-    white-space: nowrap;
 }
 
 /* Size of Profile Pic */
@@ -87,6 +86,28 @@ h3 {
     top: 6px;
     right: 12px;
     font-style: normal;
+}
+
+.buttons-group {
+    padding-bottom: 30px;
+}
+
+/* Research and Teaching Sections */
+
+.section-title {
+    padding-bottom: 20px;
+}
+
+.research-article {
+    border-top: 1px solid #bbb;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.teaching-article {
+    border-top: 1px solid #bbb;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 /* Research Links */
