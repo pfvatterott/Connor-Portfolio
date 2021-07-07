@@ -100,17 +100,17 @@
               <section id="research">
                 <h2 class="section-title">Research</h2>
 
-                <article class="research-article">
+                <article>
                   <a href="https://www.google.com/" target="_blank" class="research-link"><h3>Research Title</h3></a>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam enim dolore, hic nihil expedita repellat modi id fugit blanditiis commodi nisi, nam repellendus perspiciatis eligendi incidunt amet neque atque dolorem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, officia saepe, reprehenderit placeat praesentium repellendus aperiam molestiae veritatis vitae ea architecto consectetur. Magni expedita quod quidem, architecto aspernatur voluptates quisquam?</p>
                 </article>
                 
-                <article class="research-article">
+                <article>
                   <a href="https://www.google.com/" target="_blank" class="research-link"><h3>Research Title</h3></a>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam enim dolore, hic nihil expedita repellat modi id fugit blanditiis commodi nisi, nam repellendus perspiciatis eligendi incidunt amet neque atque dolorem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, officia saepe, reprehenderit placeat praesentium repellendus aperiam molestiae veritatis vitae ea architecto consectetur. Magni expedita quod quidem, architecto aspernatur voluptates quisquam?</p>
                 </article>
 
-                <article class="research-article">
+                <article>
                   <a href="https://www.google.com/" target="_blank" class="research-link"><h3>Research Title</h3></a>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam enim dolore, hic nihil expedita repellat modi id fugit blanditiis commodi nisi, nam repellendus perspiciatis eligendi incidunt amet neque atque dolorem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, officia saepe, reprehenderit placeat praesentium repellendus aperiam molestiae veritatis vitae ea architecto consectetur. Magni expedita quod quidem, architecto aspernatur voluptates quisquam?</p>
                 </article>
@@ -120,17 +120,17 @@
               <section id="teaching">
                 <h2 class="section-title">Teaching</h2>
 
-                <article class="teaching-article">
+                <article>
                   <h3>Teaching Title</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam enim dolore, hic nihil expedita repellat modi id fugit blanditiis commodi nisi, nam repellendus perspiciatis eligendi incidunt amet neque atque dolorem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, officia saepe, reprehenderit placeat praesentium repellendus aperiam molestiae veritatis vitae ea architecto consectetur. Magni expedita quod quidem, architecto aspernatur voluptates quisquam?</p>
                 </article>
                 
-                <article class="teaching-article">
+                <article>
                   <h3>Teaching Title</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam enim dolore, hic nihil expedita repellat modi id fugit blanditiis commodi nisi, nam repellendus perspiciatis eligendi incidunt amet neque atque dolorem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, officia saepe, reprehenderit placeat praesentium repellendus aperiam molestiae veritatis vitae ea architecto consectetur. Magni expedita quod quidem, architecto aspernatur voluptates quisquam?</p>
                 </article>
 
-                <article class="teaching-article">
+                <article>
                   <h3>Teaching Title</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam enim dolore, hic nihil expedita repellat modi id fugit blanditiis commodi nisi, nam repellendus perspiciatis eligendi incidunt amet neque atque dolorem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, officia saepe, reprehenderit placeat praesentium repellendus aperiam molestiae veritatis vitae ea architecto consectetur. Magni expedita quod quidem, architecto aspernatur voluptates quisquam?</p>
                 </article>
@@ -164,13 +164,21 @@
       });
       $("#home-button").click(function() {
         $(".tabs").tabs('select_tab', 'home')
-      })
+      });
       $("#research-button").click(function() {
         $(".tabs").tabs('select_tab', 'research')
-      })
+      });
       $("#teaching-button").click(function() {
         $(".tabs").tabs('select_tab', 'teaching')
-      })
+      });
+      // selects second child element
+      $("#research").children().eq(1).addClass("first-research-article")
+      // select all articles besides first two
+      $("#research").children().slice(2).addClass("research-article")
+      // selects second child element
+      $("#teaching").children().eq(1).addClass("first-teaching-article")
+      // select all articles besides first two
+      $("#teaching").children().slice(2).addClass("teaching-article")
     });   
   </script>
 

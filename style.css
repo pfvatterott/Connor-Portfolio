@@ -9,7 +9,7 @@ flex: 1 0 auto;
 }
 
 h1 {
-    font-size: 28px;
+    font-size: 25px;
 }
 
 h2 {
@@ -17,7 +17,7 @@ h2 {
 }
 
 h3 {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 /* Navbar Color*/
@@ -28,11 +28,11 @@ h3 {
 
 /* Navbar Text Size */
 .navbarTitle {
-    font-size: x-large; 
+    font-size: x-large;
 }
 
 .navbar-fixed { /* removes overlay so user can press links */
-    z-index: 999; 
+    z-index: 999;
 }
 
 .nav-links {
@@ -51,7 +51,7 @@ h3 {
 }
 
 .contact-padding {
-    margin-bottom: -8px !important;
+    margin-bottom: -1em !important;
 }
 
 /* Size of Profile Pic */
@@ -98,10 +98,18 @@ h3 {
     padding-bottom: 20px;
 }
 
+.first-research-article {
+    padding-bottom: 20px;
+}
+
 .research-article {
     border-top: 1px solid #bbb;
     padding-bottom: 20px;
     padding-top: 20px;
+}
+
+.first-teaching-article {
+    padding-bottom: 20px;
 }
 
 .teaching-article {
