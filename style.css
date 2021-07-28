@@ -9,26 +9,40 @@ flex: 1 0 auto;
 }
 
 h1 {
-    font-size: 25px;
+    font-size: 26px;
 }
 
 h2 {
-    font-size: 25px
+    font-size: 25px;
+    padding-bottom: 20px;
 }
 
 h3 {
     font-size: 20px;
 }
 
+/* Research Links */
+h3 a {
+    color: #25517A;
+}
+
+h3 a:hover {
+    color: #2E3639;
+}
+
+p a {
+    color: #3344dd
+}
+
+
 /* Navbar Color*/
 .nav-wrapper {
     background-color: #003262;
-    height: 64px !important;
 }
 
 /* Navbar Text Size */
 .navbarTitle {
-    font-size: x-large;
+    font-size: 14px;
 }
 
 .navbar-fixed { /* removes overlay so user can press links */
@@ -42,7 +56,6 @@ h3 {
 
 .indicator {
     display: none;
-    /* background-color: #25517A !important; */
 }
 
 /* Adjusts Height of All Content */
@@ -50,25 +63,37 @@ h3 {
     margin-top: 5%;
 }
 
-.contact-padding {
-    margin-bottom: -1em !important;
-}
-
 /* Size of Profile Pic */
 .main-profile-pic {
     max-height: 364px;
-    /* border-radius: 25px; */
+}
+
+#pronouns {
+    font-style: italic;
+}
+
+
+@media only screen and (min-width: 993px) {
+/* adjusts left column placement */
+.left-column {
+    margin-left: -100px;
+}
+
+/* adjust right column placement */
+.right-column {
+    margin-right: -100px;
+}
 }
 
 
 /* Icon Formatting */
 .contact-icons {
     background-color: #25517A;
-    margin-right: 3px;
+    margin-left: 2px;
+    margin-right: 2px;
     margin-top: 10px;
     width: 50px;
     height: 50px;
-    /* border-radius: 20px; */
 }
 
 .contact-icons:hover {
@@ -86,17 +111,33 @@ h3 {
     top: 6px;
     right: 12px;
     font-style: normal;
+    font-size: 1.3rem;
 }
 
 .buttons-group {
-    padding-bottom: 30px;
+    padding-bottom: 40px;
+    white-space: nowrap;
+    display: inline;
 }
+
+ul li {
+    display:inline-block;
+}
+
+span {
+    display: inline;
+}
+
+.icon-label {
+    text-transform: initial;
+    color: #424242;
+    font-size: small;
+    display: block;
+    margin-top: 4px;
+}
+
 
 /* Research and Teaching Sections */
-
-.section-title {
-    padding-bottom: 20px;
-}
 
 .first-research-article {
     padding-bottom: 20px;
@@ -118,14 +159,8 @@ h3 {
     padding-top: 20px;
 }
 
-/* Research Links */
-
-.research-link {
-    color: #25517A;
-}
-
-.research-link:hover {
-    color: #2E3639;
+.course-info {
+    font-style: italic;
 }
 
 /* Dividers for research and teaching */
